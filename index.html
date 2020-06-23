@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./base.css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px auto;
+            grid-template-rows: 50px 50px 200px;
+            grid-gap: 3px;
+        }
+    </style>
 </head>
 <body>
-    <h1>CSS Grid Example</h1>
-    <ul class="list">
-        <li>easier to create two dimensional layouts</li>
-        <li>simpler markup</li>
-        <li>flexible</li>
-        <li>skip frameworks</li>
-        <li>browser support</li>
-        <li><a href="examples.html">see examples</a></li>
-    </ul>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
 </body>
 </html>
